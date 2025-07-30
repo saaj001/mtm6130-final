@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+    <!-- below is  the code to link the search icon from google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" >
+     <!-- below is  the code to link the arrow right icon from google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
+        <div class="logo-container">
             <img class="logo-header" src="images/logo.png" alt="image of the logo">
-            <nav>
-                <ul>
+        </div>
+            <nav class="navigation">
+                <ul class="nav-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about-section">About Us</a></li>
                     <li><a href="#services-section">Services</a></li>
@@ -20,9 +24,9 @@
                     <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </nav>
-            <form action="thanks.html">
-                <input type="text" name="search" placeholder="Search">
-                <button type="submit"><span class="material-symbols-outlined">search</span></button>
+            <form class="search-field" action="thanks.html">
+                <input class="search-bar" type="text" name="search" placeholder="Search">
+                <button class="search-icon" type="submit"><span class="material-symbols-outlined">search</span></button>
             </form>
     </header>
     <main>
@@ -39,31 +43,31 @@
         </section>
         <section id="services-section">
             <h2>Our Services</h2>
-            <div class="services">
+            <div class="services digital">
                 <img class="digital-img" src="images/digital.jpg" alt="image of digital transformation">
                 <h3>Digital Transformation</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius omnis, quo, dicta fugit commodi voluptas odit dolorem atque porro inventore deleniti rem! Quod quaerat similique esse aperiam repudiandae eveniet natus.</p>
                 <a href="">Digital Plans<span class="material-symbols-outlined">arrow_right</span></a>
             </div>
-            <div class="services">
+            <div class="services marketing">
                 <img class="marketing-img"  src="images/marketing.jpg" alt="image of marketing">
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et consectetur, sed consequuntur doloremque veritatis vel tempore ipsam vero, hic aliquam dolore delectus consequatur. Eaque, dignissimos hic illo natus accusantium aperiam.</p>
                 <a href="">Marketing Plans<span class="material-symbols-outlined">arrow_right</span></a>
             </div>
-            <div class="services">
+            <div class="services video">
                 <img class="video-img"  src="images/video.jpg" alt="image of video production">
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus corrupti nesciunt ut rem deleniti accusantium error dolores illum perspiciatis nostrum quibusdam placeat impedit asperiores nulla, dolorem praesentium dolore? Sed, debitis.</p>
                 <a href="">Video Plans<span class="material-symbols-outlined">arrow_right</span></a>
             </div>
-            <div class="services">
+            <div class="services web">
                 <img class="web-img" src="images/web.jpg" alt="image of web development">
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, iure. Doloribus dignissimos quis ipsam maiores reprehenderit qui animi tenetur odio at molestias, voluptatum expedita est alias omnis, id quam sit.</p>
                 <a href="">Web Plans<span class="material-symbols-outlined">arrow_right</span></a>
             </div>
-            <div class="services">
+            <div class="services print">
                 <img class="print-img" src="images/print.jpg" alt="image of print">
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam libero animi harum iusto maxime, iure vitae aperiam odit, atque veniam quis est porro, rem doloribus sint nam provident. Deserunt.</p>
@@ -74,7 +78,7 @@
             <img class="vision-img" src="images/vision.jpg" alt="image of the vision section">
             <h3>Our Vision</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, provident libero eligendi praesentium, vitae ut, blanditiis obcaecati ratione quia doloremque doloribus impedit nemo quos omnis facilis nihil explicabo beatae inventore?</p>
-            <a href="">Learn More<span class="material-symbols-outlined">arrow_right</span></a>
+            <a class="vision-button" href="">Learn More<span class="material-symbols-outlined">arrow_right</span></a>
         </section>
         <section id="team-section">
             <h2>Our Team</h2>
@@ -94,19 +98,19 @@
         <section id="contact-section">
             <h2>Contact Us</h2>
             <h3>Send us a message</h3>
-            <form action="thanks.html">
+            <form class="form-contact" action="thanks.html">
                 <label for="fullname">Full Name</label>
                 <input type="text" name="fullname" id="fullname">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
                 <label for="message">Message</label>
                 <textarea name="message" id="message"></textarea>
-                <button type="submit">Send</button>
+                <button class="contact-button" type="submit">Send</button>
             </form>
         </section>
         <section id="operation-hours">
             <h3>Hours of operation</h3>
-            <table>
+            <table class="operation-table">
                 <thead>
                     <tr>
                         <th>Days</th>
@@ -127,7 +131,8 @@
         </section>
         <section class="location">
             <h3>Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9901504880727!2d-75.76063267409701!3d45.349011091117525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1753769119267!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- below is the code for the map embedded -->
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9901504880727!2d-75.76063267409701!3d45.349011091117525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1753769119267!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
